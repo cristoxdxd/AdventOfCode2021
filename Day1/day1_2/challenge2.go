@@ -1,12 +1,11 @@
-package RunChallenge1
+package challenge2
 
 import (
 	"fmt"
 )
 
-
-func RunChallenge1() {
-	input1 := [2000]int{173,
+func RunChallenge2() {
+	input := [2000]int{173,
 		175,
 		171,
 		177,
@@ -2007,13 +2006,17 @@ func RunChallenge1() {
 		7115,
 		7121}
 	var counter int = 0
-	for i := 1; i < 2000; i++ {
-		if input1[i] > input1[i-1] {
-			//fmt.Printf("\n %d (increased)", input1[i])
+	var newvalues [1998]int
+	for i := 0; i < 1998; i++{
+		newvalues[i] = input[i]+input[i+1]+input[i+2]
+	}
+	for j := 1; j < 1998; j++ {
+		if newvalues[j] > newvalues[j-1] {
+			fmt.Printf("\n %d (increased)", newvalues[j])
 			counter += 1
 		} else {
-			//fmt.Printf("\n %d (decreased)", input1[i])
+			fmt.Printf("\n %d (decreased)", newvalues[j])
 		}
 	}
-	fmt.Printf("%d", counter)
+	fmt.Printf("\n\nChallenge 2 answer: %d\n", counter)
 }
