@@ -4,4 +4,4 @@ Advent of Code, an annual set of Christmas-themed computer programming challenge
 This repository would show my solutions in 2021 edition
 
 ## Day 1
-- <a href="./Day1/First.go" target="_blank">xd</a>
+- <a href="./day1_1/challenge1.go" target="_blank">Increased an decreased</a>
