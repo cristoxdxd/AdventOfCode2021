@@ -1,10 +1,10 @@
 package main
 
 import (
-	run "github.com/cristoxdxd/AdventOfCode2021/day1/challenge.go"
-	input "github.com/cristoxdxd/AdventOfCode2021/day1/challenge.go"
+	run "github.com/cristoxdxd/AdventOfCode2021/day1_1"
 )
 
 func main(){
-	run.RunChallenge1(input.Input1);
+	// Day 1:
+	run.RunChallenge1();
 }
