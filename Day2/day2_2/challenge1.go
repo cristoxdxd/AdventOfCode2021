@@ -1,4 +1,4 @@
-package RunChallenge1
+package RunChallenge2
 
 import(
 	"bufio"
@@ -33,10 +33,11 @@ func GetCommands()[][]string {
 	return command
 }
 
-func RunChallenge1(){
+func RunChallenge2(){
 	input := GetCommands()
 	var horizontal int = 0
 	var depth int = 0
+	var aim int = 0
 	for i:=0; i < len(input); i++{
 		steps, err := strconv.Atoi(input[i][1])
 		if err != nil {
@@ -45,13 +46,14 @@ func RunChallenge1(){
 		switch(input[i][0]){
 		case "forward":
 			horizontal += steps
+			depth += aim*steps
 		case "up":
-			depth -= steps
+			aim -= steps
 		case "down":
-			depth += steps
+			aim += steps
 		}
 	}
 	//fmt.Println(horizontal)
 	//fmt.Println(depth)
-	fmt.Printf("\nChallenge 1 answer: %d", horizontal*depth)
+	fmt.Printf("\nChallenge 2 answer: %d", horizontal*depth)
 }

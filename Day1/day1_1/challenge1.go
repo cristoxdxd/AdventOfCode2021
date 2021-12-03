@@ -8,11 +8,11 @@ func RunChallenge1() {
 	var counter int = 0
 	for i := 1; i < 2000; i++ {
 		if input[i] > input[i-1] {
-			fmt.Printf("\n %d (increased)", input[i])
+			//fmt.Printf("\n %d (increased)", input[i])
 			counter += 1
 		} else {
-			fmt.Printf("\n %d (decreased)", input[i])
+			//fmt.Printf("\n %d (decreased)", input[i])
 		}
 	}
-	fmt.Printf("\n\nChallenge 1 answer: %d\n", counter)
+	fmt.Printf("\nChallenge 1 answer: %d", counter)
 }
