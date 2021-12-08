@@ -13,4 +13,11 @@ This repository would show my solutions in 2021 edition
 
 ## Day 3 Binary Diagnostic
 - <a href="./Day3/day3_1/challenge1.js" target="_blank">Power Consumption</a>
-- <a href="./Day3/day3_2/challenge2.xx" target="_blank">xd</a>
+<!-- <a href="./Day3/day3_2/challenge2.xx" target="_blank">xd</a> -->
+
+## Day 4 
+- <a href="./Day4/day4_1/challenge1.js" target="_blank">## Failed</a>
+
+## Day 7 The Treachery of Whales
+- <a href="./Day7/day7_1/challenge1.go" target="_blank">Efficient fuel</a>
+
